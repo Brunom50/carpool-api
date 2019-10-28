@@ -24,7 +24,6 @@ const logger = debug('carpool-api:server');
   /**
    * Start http server.
    */
-
   app().listen(port);
 
   logger.info(`Listening on ${port}`);
