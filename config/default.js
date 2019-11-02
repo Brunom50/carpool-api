@@ -11,12 +11,13 @@ module.exports = {
     client: 'postgres',
     connection: {
       charset: 'utf8',
-      database: 'application',
+      database: 'carpool',
       host: 'localhost',
-      password: 'mintpass',
+      password: '',
       port: 5432,
-      user: 'mintuser'
-    }
+      user: 'postgres'
+    },
+    schema: 'carpool'
   },
   server: {
     port: 3000
