@@ -16,6 +16,9 @@
     "url": "https://github.com/Brunom50/carpool-api"
   },
   "scripts": {
+    "database:initialize": "babel-node src/bin/databaseInitialize.js",
+    "database:migrations:latest": "node node_modules/.bin/knex migrate:latest",
+    "database:migrations:make": "knex migrate:make",
     "docker": "docker-compose -f docker-compose.yml up",
     "start": "DEBUG=carpool-api:* babel-node --inspect=5002 src/bin/server.js | bunyan -o short"
   },
@@ -24,9 +27,12 @@
     "core-api": "git+ssh://git@github.com:seegno-labs/core-api.git#v6.7.0",
     "debugnyan": "^2.0.2",
     "easy-errors": "git+ssh://git@github.com:seegno-labs/easy-errors.git#v0.5.0",
+    "knex": "^0.16.3",
     "got": "^9.6.0",
     "koa-router": "^7.4.0",
     "objection": "^1.6.3",
+    "objection-guid": "^3.0.2",
+    "objection-timestamps": "^3.0.2",
     "pg": "^7.8.2"
   },
   "devDependencies": {
