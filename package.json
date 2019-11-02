@@ -27,7 +27,7 @@
     "core-api": "git+ssh://git@github.com:seegno-labs/core-api.git#v6.7.0",
     "debugnyan": "^2.0.2",
     "easy-errors": "git+ssh://git@github.com:seegno-labs/easy-errors.git#v0.5.0",
-    "knex": "^0.16.3",
+    "knex": "^0.19.5",
     "got": "^9.6.0",
     "koa-router": "^7.4.0",
     "objection": "^1.6.3",
